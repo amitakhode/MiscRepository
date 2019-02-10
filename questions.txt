@@ -1,0 +1,140 @@
+Questions
+
+General Challenges
+1. Technical challenge - 
+	--> Application stopped. (Connection pool was getting full, lot of connection were getting created but was not closed) , 
+	--> trip replay Report from mySQL DB stopped working. Changed the design to store timeseries data to cassandra.
+	--> Google API key daily quota issues
+	--> 
+2. Managerial challenge - Planning when the end date was already communicated wrongly
+3. Team handling challenge - Application & mobile app team - testing scope 
+4. Boss challenge - Non performance, my superwiser was asking to release the resource. This resource was not performing in development but did very well later in testing team. 
+5. Conflict management challenge
+6. Designing challenge - Cassandra trip replay report , designing API in Donations 
+7. Estimation -  
+
+Mircoservice
+1. What is existing Donate application architecture
+2. Why Microservices
+	--> Is your current application monolith and difficult to maintain?
+	--> Do you anticipate that your application will have to deal with high volumes of traffic?
+	--> Is modularisation and code reusability the main priority?
+	--> Does your application need to be accessed on multiple device types such mobile, IoT and web?
+	--> Do specific areas your application need to be able to scale -on demand?
+	--> Are you looking to improve your software products build and release process?
+3. How is the architecture with microservice for donate
+	--> Donate User
+		--> create user (Consume validate user from social media)
+		--> get user
+		--> delete user
+		--> get donation history
+	--> Charities
+		--> get charity (Connects to charity onboarding DB)
+	--> Cards
+		--> add card (Consume card validation API)
+		--> get card 
+		--> update card (Consume card validation API)
+		--> delete card	
+	--> Donations
+		--> Setup onetime donation
+		--> Setup recurring donation
+		--> Make donation to charity (Consume MPGS API. Send card information to make payment) 
+			--> Two factor authentication
+		--> Recurring donation processing
+4. What were the considerations while designing this 
+
+Database
+1. Stored procedure - Function
+2. Execution path - example
+3. Optimizing query - example
+4. Data modeling - example 
+5. Partitioning of table - example
+
+Spring/ Spring boot, Sprint MVC, Spring cloud
+1. Benefits 
+2. 
+
+Scrum master 
+1. Estimation
+2. Ceremonies
+3. Impediments - examples 
+	--> Illness of team members
+	--> Scarcity of skills
+	--> Lots of technical debt
+	--> Problems with suppliers
+	--> Unavailability of the Product Owner
+	--> Undesired pressure from management
+	--> Conflict between team members 
+		--> Conflict over positions, strategies or opinions
+		--> Mistrust or uneven communication
+		--> Personality clashes
+		--> Power issues and personal agendas
+	--> Lots of unimportant meetings the Development Team has to attend
+	--> An indecisive Product Owner
+	--> Unresolved technical issues - Application stopped. (MySQL connected were getting created but not closed) , trip Report stopped working. 
+	--> google data store 
+4. PI planning --> Process and outcome
+5. Release planning --> Process and outcome
+6. Capacity planning --> How do we do 
+7. Velocity --> How do we do. what is the meaning 
+8. Story pointing --> How do we do. Why story pointing --> Start with why we need Agil + How the requirements in software development. 
+9. Acceptance criteria --> 
+10. Feature pointing --> 
+11. how to break down a feature in stories - example - https://techbeacon.com/app-dev-testing/practical-guide-user-story-splitting-agile-teams
+12. how to avoid dependencies while writting stories - Follow INVEST model.
+13. how to manage dependencies - Planning
+14. Why agile ?
+15. Disadvantages of agile
+16. What are roles and responsibilities of scrum master 
+
+Reporting
+1. Daily
+2. Weekly - manageement + business + Scrum of scrum
+3. Monthly - management + business 
+4.   
+  
+Sprint Boot 
+- Features of spring boot
+	-- Many quick starter projects e.g. Web, JPA. Starter projects takes care of all the framework. 
+	-- Embeded servers - Tomcat, Jetty
+	--Production ready features 
+		-- merics and health checks
+		-- externalized configuration
+-- How to create new sprint boot application
+	-- Go to start.spring.io
+	-- Create project 
+		-- Give group and artifact name
+		-- Search for the dependencies e.g. Web
+	-- Generate Project. It will download the project's zip file. 
+	-- Unzip the folder and Open Eclips
+	-- Import existing maven project, provide the path of unzipped project folder. This will import the project.
+	-- This give the skeleton of the project.
+	-- Try running the project.
+	-- It should run, and show message like  main] c.s.s.b.s.SprintbootIn10StepsApplication : Started ...
+-- 	Create simple rest controller 
+	-- http://localhost:8080/books ==> Few hardcoded books
+		-- Create a simple bean class name - Book. with 3 arguments id, name and author. Add constructor, add getter methods and add ToString method. 
+		-- Create a controller class - BooksController.
+			-- Give annotation @RestController - Import the ...
+			-- Map the response to /books by another annotation --> @GetMApping("/books")
+			-- Write a method to create book class and return the response. Find the code --> C:\Users\Amita.Khode\Documents\sprintboot-in-10-steps\src
+			-- Run the application.   main] c.s.s.b.s.SprintbootIn10StepsApplication : Started SprintbootIn10StepsApplication in 3.5 
+			-- Go to browser - http://localhost:8080/books It should return a respose as json as --> [{"id":1,"name":"First Book","author":"Author One"}]
+			-- Whollaaa!!! Ma first API. Developed with the help of Spring Boot !!! Now understand what all had happened in background. :-)
+-- Understand what all happened in background
+	-- Understand the Autoconfigurations
+		-- @SpringBootApplication 
+			-- annotation indicates that this is a spring context file
+			-- It enables autoconfigurations
+			-- It enables component scan
+-- Ref - Springboottutorial.com
+-- Ref - http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners
+-- Ref - Spring vs Spring Boot vs Spring MVC --> http://www.springboottutorial.com/spring-boot-vs-spring-mvc-vs-spring
+-- Ref - 20+ Spring Boot Projects with Code Examples --> http://www.springboottutorial.com/spring-boot-projects-with-code-examples
+-- Ref - Spring Boot Interview Questions --> http://www.springboottutorial.com/spring-boot-interview-questions
+-- Ref - Introduction to Web Services - Restful and SOAP --> http://www.springboottutorial.com/introduction-to-web-services-with-soap-and-rest
+-- Ref - Microservices with Spring Boot - Part 1 - Getting Started --> http://www.springboottutorial.com/creating-microservices-with-spring-boot-part-1-getting-started
+
+
+Courses with 250,000 Leaners --> https://www.in28minutes.com/p/in28minutes-udemy-courses-discount-codes.html
+
