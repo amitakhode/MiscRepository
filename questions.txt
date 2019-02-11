@@ -154,6 +154,7 @@ nodetool - is a swiss nife for cassandra
 	
 Git command to commit changes in remote directory --> This directory is already marked to monitor changes
 --> git pull --all
+--> git add -A --> To add new file in remote repository
 --> git commit -m "Commit Comments"
 --> git push -u origin master	
   
