@@ -152,5 +152,8 @@ nodetool - is a swiss nife for cassandra
 	nodetool tablehistograms
 	nodetool tpstats -->thread pool statistics
 	
-	
+Git command to commit changes in remote directory --> This directory is already marked to monitor changes
+--> git pull --all
+--> git commit -m "Commit Comments"
+--> git push -u origin master	
   
