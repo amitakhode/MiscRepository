@@ -141,6 +141,14 @@ Courses with 250,000 Leaners --> https://www.in28minutes.com/p/in28minutes-udemy
 Core Java Practice links --> http://www.java2novice.com/
 Collection Example --> http://www.java2novice.com/java-collections-and-util/
 
+Notes on Cassandra
+
+SSTable
+A sorted string table (SSTable) is an immutable data file to which Cassandra writes memtables periodically. SSTables are append only and stored on disk sequentially and maintained for each Cassandra table.
+
+CQL Table
+A collection of ordered columns fetched by table row. A table consists of columns and has a primary key.
+
 Cassandra stress - is a tool which can be used to determine how much stress can be put on a cassandra node
 nodetool - is a swiss nife for cassandra
 	nodetool info
