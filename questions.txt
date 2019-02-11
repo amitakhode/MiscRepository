@@ -2,9 +2,9 @@ Questions - Made a change
 
 General Challenges
 1. Technical challenge - 
-	--> Application stopped. (Connection pool was getting full, lot of connection were getting created but was not closed) , 
-	--> trip replay Report from mySQL DB stopped working. Changed the design to store timeseries data to cassandra.
-	--> Google API key daily quota issues
+	--> Wrong implementation issue - Application stopped. (Connection pool was getting full, lot of connection were getting created but was not closed) , 
+	--> Design issue - trip replay Report from mySQL DB stopped working. Changed the design to store timeseries data to cassandra.
+	--> Operational issue - Google API key daily quota issues
 	--> 
 2. Managerial challenge - Planning when the end date was already communicated wrongly
 3. Team handling challenge - Application & mobile app team - testing scope 
@@ -140,3 +140,17 @@ Courses with 250,000 Leaners --> https://www.in28minutes.com/p/in28minutes-udemy
 
 Core Java Practice links --> http://www.java2novice.com/
 Collection Example --> http://www.java2novice.com/java-collections-and-util/
+
+Cassandra stress - is a tool which can be used to determine how much stress can be put on a cassandra node
+nodetool - is a swiss nife for cassandra
+	nodetool info
+	nodetool compactionhistory
+	nodetool gcstats
+	nodetool gossipinfo
+	nodetool ring
+	nodetool tablestats
+	nodetool tablehistograms
+	nodetool tpstats -->thread pool statistics
+	
+	
+  
