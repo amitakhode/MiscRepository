@@ -1,6 +1,6 @@
 Questions - Made a change 
 
-Now the file in master repo is different than the local copy.
+Now the file in master branch of remote repo is different than the local copy.
 
 General Challenges
 1. Technical challenge - 
