@@ -17,6 +17,7 @@ General Challenges
 
 Mircoservice
 1. What is existing Donate application architecture
+	--> Need to draw architectural diagram 
 2. Why Microservices
 	--> Is your current application monolith and difficult to maintain?
 	--> Do you anticipate that your application will have to deal with high volumes of traffic?
@@ -51,10 +52,6 @@ Database
 3. Optimizing query - example
 4. Data modeling - example 
 5. Partitioning of table - example
-
-Spring/ Spring boot, Sprint MVC, Spring cloud
-1. Benefits 
-2. 
 
 Scrum master 
 1. Estimation
@@ -94,8 +91,12 @@ Reporting
 2. Weekly - manageement + business + Scrum of scrum
 3. Monthly - management + business 
 4.   
+
+Spring/ Spring boot, Sprint MVC, Spring cloud
+1. Benefits 
+2. 
   
-Sprint Boot 
+Spring Boot 
 - Features of spring boot
 	-- Many quick starter projects e.g. Web, JPA. Starter projects takes care of all the framework. 
 	-- Embeded servers - Tomcat, Jetty
