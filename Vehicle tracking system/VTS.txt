@@ -1,0 +1,29 @@
+Vehicle tracking system 
+
+Assumptions :
+-- Transport company TC is based in one MH State. 
+-- There are officecs of TC in each city.
+-- TC has x number of fleets
+-- fleets are distributed in various cities in MH state.
+-- Each fleet belongs to one city.
+-- TC is owned by a owner.
+-- Each city office have transport managers 
+-- Transport manager is responsible for fleets in their city. They also manage drivers.
+-- There are y number of drivers per city.
+
+Entity Vehicle 
+
+Employees (Manager,driver)
+
+
+Access Patterns
+Q1: Find a user with specified email
+Q2: Find all vehicles managed by manager
+Q3: Find details of a logged in manager (user)
+Q4: Find selected vehicles 
+Q5: Find details of selected vehicles
+Q6: Find vehicle's current location
+Q7: Find all the locations for vehicle with today's timestamp 
+Q8: Find list of drivers who report to the logged in manager
+Q9: Find selected driver's details
+Q10: Find driver's assigned vehicle. 

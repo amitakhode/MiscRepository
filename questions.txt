@@ -1,8 +1,4 @@
-Questions - Made a change 
-
-Now the file in master branch of remote repo is different than the local copy.
-
-Some more changes
+Questions 
 
 General Challenges
 1. Technical challenge - 
@@ -48,6 +44,16 @@ Mircoservice
 		--> Recurring donation processing
 4. What were the considerations while designing this 
 
+Caching - concepts and implemetation methodologies 
+
+Messaging - concepts and implemetation methodologies - RabbitMQ
+
+Rule engine - drool 
+
+Security in web application
+
+Security in Microservices
+
 Database
 1. Stored procedure - Function
 2. Execution path - example
@@ -87,6 +93,7 @@ Scrum master
 14. Why agile ?
 15. Disadvantages of agile
 16. What are roles and responsibilities of scrum master 
+17. Do you do end deliverable tracking as scrum master. 
 
 Reporting
 1. Daily
@@ -174,3 +181,8 @@ Git command to commit changes in remote directory --> This directory is already 
 --> git commit -m "Commit Comments"
 --> git push -u origin master	
   
+Roles
+Technologies
+Products - Telematics exposure
+Responsibilities
+Frameworks (Scrum & SAFe)
